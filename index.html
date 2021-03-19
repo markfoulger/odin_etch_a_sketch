@@ -3,9 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title>Etch-a-Sketch</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet"> 
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body onload="generateDivGrid()">
+        <h1 id="title">Etch-a-Sketch</h1>
+        <form id="sketch-controls">
+            <input id="sketch-grid-slider" name="sketch-grid-slider" type="range" min="1" max="64" step="1" value="16">
+            <output for="sketch-grid-slider">16</output>
+            <button id="clear-button" type="button">Generate Grid </button>
+        </form>
+        <div id="sketch-container"></div>
         <script src="script.js"></script>
     </body>
 
